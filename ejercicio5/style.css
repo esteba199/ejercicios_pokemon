@@ -1,0 +1,50 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+}
+
+.layout {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-areas:
+        "header header"
+        "aside  main"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #EE1515;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #FFDE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
